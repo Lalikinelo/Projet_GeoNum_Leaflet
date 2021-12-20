@@ -1,0 +1,10 @@
+IRIS-69-pm2.5.geojson
+La colonne "moyenne_pm2.5" correspond à la contrentration annuelle moyenne de la zone, en µg/m3
+* Données contours IRIS : https://geoservices.ign.fr/irisge
+* Données de pollution pm2.5 : https://atmoaura.maps.arcgis.com/apps/MapSeries/index.html?appid=d510fdcf588a4a7f9e8b6771fe87b305
+lignes_metro.zip
+* Données : https://data.grandlyon.com/jeux-de-donnees/lignes-metro-funiculaire-reseau-transports-commun-lyonnais-v2/info
+parkings.geojson
+* Données : https://data.grandlyon.com/jeux-de-donnees/parkings-metropole-lyon/info
+
+Attention à la taille et à la validité des données ! Il peut être nécéssaire de retravailler ces fichiers avant de pouvoir les utiliser avec Leaflet.
