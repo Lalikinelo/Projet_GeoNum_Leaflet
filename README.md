@@ -2,7 +2,7 @@
 Projet javascript/Leaflet - Master 2 GeoNum
 
 Titre:
-Carte de la pollution aux particules fines à Lyon
+Carte de la pollution aux particules fines à Lyon. 
 Prendre le métro pour limiter les émissions: quel parking optimal pour son véhicule ?
 
 Objectifs:
@@ -38,4 +38,4 @@ Difficultés rencontrées (et résolues avec les autres étudiants du master, la
 
 
 Le travail a été en partie effectué en binôme avec avec Saulo.
-Merci Mickael Perrier (Lyon2/ENSLyon/UJM) votre cours et ce projet qui m'a permmi de me progresser en javascript!
+Merci Mickael Perrier (Lyon2/ENSLyon/UJM) votre cours et ce projet qui m'a permis de me progresser en javascript!
