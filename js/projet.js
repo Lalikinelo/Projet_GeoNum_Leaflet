@@ -234,8 +234,10 @@ var parking_markers = L.geoJSON(park,
 		var buffer_300m = new L.circle(latlng, 300, {opacity:0 , fillOpacity: 0}).addTo(map);
 		var parking = new L.marker(latlng, {icon : parking_icon_small});
 		
+		// affichage d'info du parking
 		parking.bindPopup("<h2>Parking : "+feature.properties.nom+"</h2><h3>"+feature.properties.fermeture+"</h3><h3>"+feature.properties.reglementation+"</h3><h3>"+feature.properties.situation+"</h3>");	
 		
+		// Mise en valeur du parking et buffer de 300M
 		parking.on('mouseover', function() 
 			{
 			buffer_300m.setStyle({fillColor: 'blue', fillOpacity: 0.5})
@@ -301,7 +303,6 @@ var iris_data = L.geoJSON(iris,
 		layer.on('click', function() 
 			{
 			this.bindTooltip(feature.properties.NOM_IRIS)
-
 			});
 		}
 	}).addTo(map);
@@ -362,7 +363,7 @@ setTimeout(function() // attente que les couches soient chargées
 	var overlays = 
 		{
 		"Lignes de métro": metro_data_lines,
-		"arrêts de métro": acces_metro_markers,
+		"Accès au métro": acces_metro_markers,
 		"Parkings": markersCluster,
 		"Pollution aux particules 2.5PM": iris_data,
 		};
@@ -371,6 +372,6 @@ setTimeout(function() // attente que les couches soient chargées
 
 
 
-// ajouste le zoom aux données
+// ajuste le zoom aux données
 map.fitBounds(iris_data.getBounds());
 map.setZoom(12);
